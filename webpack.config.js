@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 require("babel-register");
 
 
@@ -30,11 +29,6 @@ const config = {
     ]
   },
   plugins: [
-      new HtmlWebpackPlugin({
-	      template: path.resolve(__dirname, './src/index.html'),
-	      filename: 'index.html',
-	      hash: true
-    })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
